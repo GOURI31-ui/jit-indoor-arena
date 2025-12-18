@@ -1,40 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard</title>
+  <title>Login</title>
     <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="dashboard">
+    <body>
+      <h2>User Login</h2>
 
-      <h1 class="title">🏟️ Welcome to JIT Indoor Arena</h1>
-        <p class="subtitle">Choose a game to participate</p>
+        <input type="email" id="email" placeholder="Email"><br><br>
+          <input type="password" id="password" placeholder="Password"><br><br>
 
-        <h2 class="subtitle">Choose a game to participate</h2>
+            <button type="button" onclick="signUp()">Sign Up</button>
+              <button type="button" onclick="login()">Login</button>
 
-        <div class="game-buttons">
-          <a href="chess.html" class="game-btn">♟ Chess</a>
-            <a href="badminton.html" class="game-btn">🏸 Badminton</a>
-              <a href="carrom.html" class="game-btn">🎯 Carrom</a>
-                <a href="tabletennis.html" class="game-btn">🏓 Table Tennis</a>
-                </div>
+                <p id="message"></p>
 
-                  <div class="menu">
-                      <button onclick="window.location.href='profile.html'">👤 My Profile</button>
-                          <button onclick="window.location.href='leaderboard.html'">🏆 Leaderboard</button>
-                              <button class="logout" onclick="logout()">Logout</button>
-                                </div>
+                  <!-- Supabase CDN -->
+                    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 
-                                  <script>
-                                      function goToGame(page) {
-                                            window.location.href = page;
-                                                }
-
-                                                    function logout() {
-                                                          localStorage.clear();
-                                                                window.location.href = "index.html";
-                                                                    }
-                                                                      </script>
-
-                                                                      </body>
-                                                                      </html>
+                      <!-- Your JS -->
+                        <script src="script.js"></script>
+                        </body>
+                        </html>
