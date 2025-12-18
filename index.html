@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="dashboard">
+
+      <h1 class="title">🏟️ Welcome to JIT Indoor Arena</h1>
+        <p class="subtitle">Choose a game to participate</p>
+
+        <h2 class="subtitle">Choose a game to participate</h2>
+
+        <div class="game-buttons">
+          <a href="chess.html" class="game-btn">♟ Chess</a>
+            <a href="badminton.html" class="game-btn">🏸 Badminton</a>
+              <a href="carrom.html" class="game-btn">🎯 Carrom</a>
+                <a href="tabletennis.html" class="game-btn">🏓 Table Tennis</a>
+                </div>
+
+                  <div class="menu">
+                      <button onclick="window.location.href='profile.html'">👤 My Profile</button>
+                          <button onclick="window.location.href='leaderboard.html'">🏆 Leaderboard</button>
+                              <button class="logout" onclick="logout()">Logout</button>
+                                </div>
+
+                                  <script>
+                                      function goToGame(page) {
+                                            window.location.href = page;
+                                                }
+
+                                                    function logout() {
+                                                          localStorage.clear();
+                                                                window.location.href = "index.html";
+                                                                    }
+                                                                      </script>
+
+                                                                      </body>
+                                                                      </html>
